@@ -26,7 +26,8 @@ while True:
         sleep(1) 
         print('[bold green]Tarefa cadastrada com sucesso![/]')
     elif opcao == 2: 
-        pass
+        nome = input('Digite o nome da tarefa que deseja alterar: ') 
+        tarefas.alterar_status(nome) 
     elif opcao == 3: 
         pass
     elif opcao == 4: 
