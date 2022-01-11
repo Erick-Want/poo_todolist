@@ -1,5 +1,6 @@
-from rich import print 
-import base 
+from rich import print
+from time import sleep
+import base
  
 tarefas = base.ListaTarefas() 
  
@@ -32,7 +33,8 @@ while True:
         nome = input('Digite o nome da tarefa que deseja remover: ') 
         tarefas.remover_tarefa(nome) 
     elif opcao == 4: 
-        pass
+        data = input('Digite a data do vencimento das tarefas que deseja imprimir: ')
+        tarefas.imprimir_tarefas(data)
     elif opcao == 5: 
         break 
     else: 
