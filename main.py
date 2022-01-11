@@ -18,7 +18,13 @@ while True:
         continue 
     print(f'>>> Opção escolhida: {opcao} <<<') 
     if opcao == 1: 
-        pass
+        nome = input('Digite o nome da tarefa: ') 
+        data = input('Digite a data da tarefa: ') 
+        categoria = input('Digite a categoria da tarefa: ') 
+        tarefas.adicionar_tarefa(nome, data, categoria) 
+        print('Adicionando tarefa...') 
+        sleep(1) 
+        print('[bold green]Tarefa cadastrada com sucesso![/]')
     elif opcao == 2: 
         pass
     elif opcao == 3: 
