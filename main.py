@@ -29,7 +29,8 @@ while True:
         nome = input('Digite o nome da tarefa que deseja alterar: ') 
         tarefas.alterar_status(nome) 
     elif opcao == 3: 
-        pass
+        nome = input('Digite o nome da tarefa que deseja remover: ') 
+        tarefas.remover_tarefa(nome) 
     elif opcao == 4: 
         pass
     elif opcao == 5: 
