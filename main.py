@@ -1,5 +1,6 @@
 from rich import print
 from time import sleep
+import os
 import base
  
 tarefas = base.ListaTarefas() 
@@ -10,7 +11,8 @@ while True:
     2 - Alterar o status da tarefa. 
     3 - Remover tarefa. 
     4 - Visualizar tarefas. 
-    5 - Fechar. 
+    5 - Limpar o console
+    6 - Fechar. 
     ''') 
     try: 
         opcao = int(input('Digite a opção desejada: ')) 
@@ -35,8 +37,12 @@ while True:
     elif opcao == 4: 
         data = input('Digite a data do vencimento das tarefas que deseja imprimir: ')
         tarefas.imprimir_tarefas(data)
-    elif opcao == 5: 
-        break 
+    elif opcao == 5:
+        os.system('clear')
+    elif opcao == 6: 
+        print('Finalizando...')
+        sleep(2)
+        break
     else: 
         print('[bold red]Digite uma opção válida![/]') 
 print('[bold]Partiu concluir as tarefas pendentes![/]')
