@@ -23,7 +23,18 @@ class ListaTarefas ():
         else:
             for tarefa in self.lista_tarefas:
                 if tarefa[0] == nome_tarefa:
+                    print(f'''
+                    Tarefa a ser removida:
+                    Nome: {tarefa[0]}
+                    Data de vencimento:: {tarefa[1]}
+                    Categoria: {tarefa[2]}
+                    Status: {tarefa[3]}
+
+                    [bold]Removendo...[/]
+                    ''')
+                    sleep(2)
                     self.lista_tarefas.remove(tarefa)
+                    print('[bold green] Removido com sucesso![/]')
         self.atualizar_csv()
 
     def alterar_status (self, nome_tarefa):
