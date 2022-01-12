@@ -26,11 +26,11 @@ class ListaTarefas ():
                     print(f'''
                     Tarefa a ser removida:
                     Nome: {tarefa[0]}
-                    Data de vencimento:: {tarefa[1]}
+                    Data de vencimento: {tarefa[1]}
                     Categoria: {tarefa[2]}
                     Status: {tarefa[3]}
 
-                    [bold]Removendo...[/]
+                    [white]Removendo...[/]
                     ''')
                     sleep(2)
                     self.lista_tarefas.remove(tarefa)
@@ -71,7 +71,7 @@ class ListaTarefas ():
                         Status: {tarefa[3]}
                     ''')
             else:
-                print(f'Não foi encontrada nenhuma tarefa na data: {data}')
+                print(f'[bold red]Não foi encontrada nenhuma tarefa na data: {data}[/]')
 
     def atualizar_csv (self):
         with open('File.csv', 'w') as arquivo:
