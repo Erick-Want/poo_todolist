@@ -19,7 +19,7 @@ class ListaTarefas ():
     def remover_tarefa (self, nome_tarefa): 
         self.ler_csv() 
         if len(self.lista_tarefas) == 0: 
-            print('[bold red]Sem tarefas para alterar, adicione alguma![/]') 
+            print('[bold red]Sem tarefas para remover, adicione alguma![/]') 
         else: 
             for tarefa in self.lista_tarefas: 
                 if tarefa[0] == nome_tarefa: 
@@ -53,7 +53,7 @@ class ListaTarefas ():
     def imprimir_tarefas (self, data_vencimento): 
         self.ler_csv() 
         if len(self.lista_tarefas) == 0: 
-            print('[bold red]Sem tarefas para alterar, adicione alguma![/]') 
+            print('[bold red]Sem tarefas para imprimir, adicione alguma![/]') 
         else: 
             encontradas = [] 
  

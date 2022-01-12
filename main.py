@@ -61,7 +61,7 @@ while True:
         nome = input('Digite o nome da tarefa que deseja remover: ') 
         tarefas.remover_tarefa(nome) 
     elif resposta['opcao'] == opcoes[3]: 
-        data = input('Digite a data do vencimento das tarefas que deseja imprimir: ') 
+        data = valida_data()
         tarefas.imprimir_tarefas(data) 
     elif resposta['opcao'] == opcoes[4]: 
         os.system('clear') 
